@@ -5,6 +5,7 @@ import type { NestedMenuItem } from '@/types';
 import {
   BookOpen,
   CalendarClock,
+  Database,
   Download,
   Gamepad2,
   Layers3,
@@ -62,6 +63,20 @@ export function useNavbarLinks(): NestedMenuItem[] {
           title: 'Deck building',
           description: 'When to take, skip and upgrade cards.',
           href: Routes.DeckBuilding,
+          external: false,
+          icon: <Layers3 className="size-4" />,
+        },
+        {
+          title: 'Card database',
+          description: 'Search card images, energy, types and current effects.',
+          href: Routes.Cards,
+          external: false,
+          icon: <Database className="size-4" />,
+        },
+        {
+          title: 'Deck builder',
+          description: 'Plan a run deck, party attributes and energy curve.',
+          href: Routes.DeckBuilder,
           external: false,
           icon: <Layers3 className="size-4" />,
         },

@@ -44,7 +44,13 @@ const wikiNavRoutes = [
   {
     title: 'Combat & Decks',
     icon: Swords,
-    routes: ['/combat-attributes', '/deck-building', '/cursed-swords-leaders'],
+    routes: [
+      '/combat-attributes',
+      '/deck-building',
+      '/cards',
+      '/deck-builder',
+      '/cursed-swords-leaders',
+    ],
   },
   {
     title: 'World & Cast',
@@ -313,6 +319,8 @@ export function QuickWikiLinks({
     { href: '/guides/beginner-guide', label: 'Beginner', icon: BookOpen },
     { href: '/combat-attributes', label: 'Attributes', icon: Swords },
     { href: '/deck-building', label: 'Decks', icon: Layers3 },
+    { href: '/cards', label: 'Cards', icon: Layers3 },
+    { href: '/deck-builder', label: 'Planner', icon: Layers3 },
     { href: '/map-routes', label: 'Routes', icon: Map },
     { href: '/characters', label: 'Characters', icon: UsersRound },
     { href: '/switch-vs-steam', label: 'Versions', icon: Gamepad2 },

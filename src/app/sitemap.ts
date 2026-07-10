@@ -10,6 +10,8 @@ const coreRoutes = [
   Routes.BeginnerGuide,
   Routes.CombatAttributes,
   Routes.DeckBuilding,
+  Routes.Cards,
+  Routes.DeckBuilder,
   Routes.MapRoutes,
   Routes.CursedSwordsLeaders,
   Routes.Characters,
@@ -45,6 +47,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
         route === Routes.Guides ||
         route === Routes.BeginnerGuide ||
         route === Routes.CombatAttributes ||
+        route === Routes.Cards ||
+        route === Routes.DeckBuilder ||
         route === Routes.Characters;
 
       return {

@@ -1,7 +1,7 @@
 {
   "name": "Tokyo Valkyries Wiki",
   "short_name": "Tokyo Valkyries",
-  "description": "Tokyo Valkyries wiki with beginner, deck, combat, map, character, Cursed Sword, Switch, Steam and story guides.",
+  "description": "Tokyo Valkyries card database and deck builder with real card images, energy, attributes, party planning, guides, characters and routes.",
   "icons": [
     {
       "src": "/logo.svg",

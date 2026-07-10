@@ -3,7 +3,6 @@
 import Container from '@/components/layout/container';
 import { Logo } from '@/components/layout/logo';
 import { useFooterLinks } from '@/config/footer-config';
-import { useSocialLinks } from '@/config/social-config';
 import { LocaleLink } from '@/i18n/navigation';
 import { cn } from '@/lib/utils';
 import { useTranslations } from 'next-intl';
@@ -12,7 +11,6 @@ import type React from 'react';
 export function Footer({ className }: React.HTMLAttributes<HTMLElement>) {
   const t = useTranslations();
   const footerLinks = useFooterLinks();
-  const socialLinks = useSocialLinks();
 
   return (
     <footer
@@ -37,25 +35,6 @@ export function Footer({ className }: React.HTMLAttributes<HTMLElement>) {
               <p className="text-muted-foreground text-base py-2 md:pr-12">
                 {t('Marketing.footer.tagline')}
               </p>
-
-              {/* social links */}
-              <div className="flex items-center gap-4 py-2">
-                <div className="flex items-center gap-2">
-                  {socialLinks?.map((link) => (
-                    <a
-                      key={link.title}
-                      href={link.href || '#'}
-                      target="_blank"
-                      rel="noreferrer"
-                      aria-label={link.title}
-                      className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-[#3b2b62] text-[#9f94ba] hover:border-[#54e7ff] hover:bg-[#111126] hover:text-[#f8f6ff]"
-                    >
-                      <span className="sr-only">{link.title}</span>
-                      {link.icon ? link.icon : null}
-                    </a>
-                  ))}
-                </div>
-              </div>
             </div>
           </div>
 

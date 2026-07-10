@@ -17,6 +17,8 @@ export enum Routes {
   BeginnerGuide = '/guides/beginner-guide',
   CombatAttributes = '/combat-attributes',
   DeckBuilding = '/deck-building',
+  Cards = '/cards',
+  DeckBuilder = '/deck-builder',
   MapRoutes = '/map-routes',
   CursedSwordsLeaders = '/cursed-swords-leaders',
   Characters = '/characters',

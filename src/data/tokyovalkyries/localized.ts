@@ -78,14 +78,14 @@ export function getHomeContent(_locale?: Locale | string): HomeContent {
 
   return {
     badge: 'Tokyo Valkyries launch guide hub',
-    metadataTitle: 'Tokyo Valkyries Wiki - Deck, Character and Beginner Guides',
+    metadataTitle: 'Tokyo Valkyries Wiki - Cards, Deck Builder and Guides',
     title: 'Tokyo Valkyries Wiki',
     intro:
       'Build a three-Valkyrie party, focus Resolve, Courage, Hope and Dawn cards, read enemy intent, plan safer routes and reach every Cursed Sword with a deck that can defend itself.',
     primaryCta: 'Beginner guide',
     secondaryCta: 'Attributes guide',
     scopeNote:
-      'Focused on the decisions players face now. No fake codes, unsupported tier list or incomplete card database.',
+      'Includes a growing card library and an interactive run deck planner alongside decision-first guides.',
     routeLabels,
     keywordRoutes,
     faq: [
@@ -108,6 +108,11 @@ export function getHomeContent(_locale?: Locale | string): HomeContent {
         question: 'What should I read first?',
         answer:
           'Start with the beginner guide, then use combat attributes, deck building and map routes for the decision currently blocking a run.',
+      },
+      {
+        question: 'Does this wiki have a card database and deck builder?',
+        answer:
+          'Yes. The card database supports name, energy, type and attribute filters, while the deck builder tracks the current run, party icons and energy curve.',
       },
     ],
   };
@@ -134,9 +139,9 @@ export function getGuidesIndexContent(
           'Yes. They use the July 2026 release, official system pages, live Steam data, official media and launch-day gameplay cross-checks.',
       },
       {
-        question: 'Will this wiki add a card database?',
+        question: 'What can I do in the card database?',
         answer:
-          'Only after a reliable complete dataset and update workflow exist. The launch site avoids presenting incomplete extracted cards as authoritative.',
+          'Yes. The card database and interactive run deck builder are available from the Combat navigation group.',
       },
     ],
   };
@@ -180,6 +185,8 @@ export const routeLabels: Record<string, string> = {
   '/guides/beginner-guide': 'Beginner Guide',
   '/combat-attributes': 'Combat & Attributes',
   '/deck-building': 'Deck Building',
+  '/cards': 'Card Database',
+  '/deck-builder': 'Deck Builder',
   '/map-routes': 'Map Routes',
   '/cursed-swords-leaders': 'Cursed Swords & Leaders',
   '/characters': 'Characters',

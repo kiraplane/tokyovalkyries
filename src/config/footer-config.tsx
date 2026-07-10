@@ -22,6 +22,8 @@ export function useFooterLinks(): NestedMenuItem[] {
       items: [
         { title: 'Attributes', href: Routes.CombatAttributes, external: false },
         { title: 'Deck Building', href: Routes.DeckBuilding, external: false },
+        { title: 'Card Database', href: Routes.Cards, external: false },
+        { title: 'Deck Builder', href: Routes.DeckBuilder, external: false },
         { title: 'Map Routes', href: Routes.MapRoutes, external: false },
         {
           title: 'Cursed Swords',

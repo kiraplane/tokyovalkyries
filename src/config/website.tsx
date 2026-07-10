@@ -27,12 +27,12 @@ export const websiteConfig: WebsiteConfig = {
     },
     social: {
       github: '',
-      twitter: 'https://x.com/qureate',
+      twitter: '',
       blueSky: '',
       discord: '',
       mastodon: '',
       linkedin: '',
-      youtube: 'https://www.youtube.com/channel/UCerhAhpnanzS4fHGvQOGm-g',
+      youtube: '',
     },
   },
   features: {

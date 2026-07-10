@@ -250,14 +250,14 @@ export const guides: Guide[] = [
       'Tokyo Valkyries best deck',
     ],
     sourceNotes:
-      'Uses the official card/party rules and launch gameplay. No complete public card database was reliable enough to present as exhaustive.',
+      'Uses the card/party rules, current card library and launch gameplay. Expand the database and planner as more complete effect text is confirmed.',
     video: videos.pcRun,
     tags: ['Cards', 'Synergy', 'Upgrades'],
     relatedRoutes: [
+      '/cards',
+      '/deck-builder',
       '/combat-attributes',
       '/map-routes',
-      '/cursed-swords-leaders',
-      '/guides/beginner-guide',
     ],
     body: [
       {

@@ -7,6 +7,7 @@ import {
 } from '@/components/tokyovalkyries/wiki-navigation';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
+import { cards } from '@/data/tokyovalkyries/cards';
 import {
   getHomeContent,
   getLocalizedFeaturedGuides,
@@ -20,7 +21,7 @@ import {
   ArrowRight,
   BookOpen,
   CalendarDays,
-  ExternalLink,
+  Database,
   Gamepad2,
   Layers3,
   Map,
@@ -63,6 +64,8 @@ const hubs = [
     links: [
       ['Combat attributes', '/combat-attributes'],
       ['Deck building', '/deck-building'],
+      ['Card database', '/cards'],
+      ['Deck builder', '/deck-builder'],
       ['Cursed Swords', '/cursed-swords-leaders'],
     ],
   },
@@ -313,6 +316,72 @@ export function TokyoValkyriesHomePage({ locale }: { locale?: Locale }) {
               })}
             </section>
 
+            <section className="grid gap-4 md:grid-cols-2">
+              <LocaleLink
+                href="/cards"
+                className="group grid min-w-0 grid-cols-[112px_minmax(0,1fr)] overflow-hidden rounded-xl border border-[#3b2b62] bg-[#111126] transition hover:-translate-y-0.5 hover:border-[#54e7ff] sm:grid-cols-[150px_minmax(0,1fr)]"
+              >
+                <div className="relative min-h-48 overflow-hidden border-[#3b2b62] border-r bg-[#090916]">
+                  <Image
+                    src={cards[6]?.image ?? '/logo.svg'}
+                    alt="Skull Crush card"
+                    fill
+                    sizes="150px"
+                    className="object-cover transition duration-300 group-hover:scale-[1.03]"
+                  />
+                </div>
+                <div className="min-w-0 p-5">
+                  <Database className="size-5 text-[#54e7ff]" />
+                  <p className="mt-3 text-xs font-semibold uppercase tracking-[0.18em] text-[#ff4fd8]">
+                    Data
+                  </p>
+                  <h2 className="mt-2 font-display text-2xl font-black">
+                    Search the card database
+                  </h2>
+                  <p className="mt-2 text-sm leading-7 text-[#bdb3d2]">
+                    Filter real card images by energy, Attack or Support type,
+                    attribute and effect keyword.
+                  </p>
+                  <span className="mt-4 inline-flex items-center gap-1 text-[#54e7ff] text-sm font-semibold">
+                    Browse cards
+                    <ArrowRight className="size-4" />
+                  </span>
+                </div>
+              </LocaleLink>
+
+              <LocaleLink
+                href="/deck-builder"
+                className="group grid min-w-0 grid-cols-[112px_minmax(0,1fr)] overflow-hidden rounded-xl border border-[#3b2b62] bg-[#111126] transition hover:-translate-y-0.5 hover:border-[#ff4fd8] sm:grid-cols-[150px_minmax(0,1fr)]"
+              >
+                <div className="relative min-h-48 overflow-hidden border-[#3b2b62] border-r bg-[#090916]">
+                  <Image
+                    src={cards[9]?.image ?? '/logo.svg'}
+                    alt="Destroy Slash card"
+                    fill
+                    sizes="150px"
+                    className="object-cover transition duration-300 group-hover:scale-[1.03]"
+                  />
+                </div>
+                <div className="min-w-0 p-5">
+                  <Layers3 className="size-5 text-[#ff4fd8]" />
+                  <p className="mt-3 text-xs font-semibold uppercase tracking-[0.18em] text-[#54e7ff]">
+                    Tool
+                  </p>
+                  <h2 className="mt-2 font-display text-2xl font-black">
+                    Plan the current run
+                  </h2>
+                  <p className="mt-2 text-sm leading-7 text-[#bdb3d2]">
+                    Count party icons, build the deck, inspect the energy curve
+                    and share the setup with one URL.
+                  </p>
+                  <span className="mt-4 inline-flex items-center gap-1 text-[#ff4fd8] text-sm font-semibold">
+                    Open deck builder
+                    <ArrowRight className="size-4" />
+                  </span>
+                </div>
+              </LocaleLink>
+            </section>
+
             <section className="rounded-xl border border-[#3b2b62] bg-[#111126] p-5 md:p-6">
               <div className="flex flex-wrap items-end justify-between gap-3">
                 <div>
@@ -552,14 +621,10 @@ export function TokyoValkyriesHomePage({ locale }: { locale?: Locale }) {
                     variant="outline"
                     className="border-[#54e7ff] bg-transparent text-[#f8f6ff] hover:bg-[#54e7ff] hover:text-[#081014]"
                   >
-                    <a
-                      href={siteFacts.officialSteamUrl}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Steam
-                      <ExternalLink className="size-4" />
-                    </a>
+                    <LocaleLink href="/deck-builder">
+                      Deck builder
+                      <Layers3 className="size-4" />
+                    </LocaleLink>
                   </Button>
                 </div>
               </div>

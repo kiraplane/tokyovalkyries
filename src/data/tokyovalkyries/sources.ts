@@ -28,7 +28,7 @@ export const siteFacts = {
 } as const;
 
 export const siteDescription =
-  'Tokyo Valkyries wiki with beginner, deck, combat, map, character, Cursed Sword, Switch, Steam and story guides for the roguelite card RPG.';
+  'Tokyo Valkyries card database and deck builder with real card images, energy, attributes, party planning, guides, characters and routes.';
 
 export const gameFacts: GameFact[] = [
   {
@@ -295,12 +295,20 @@ export const keywordMatrix: KeywordMatrixItem[] = [
   {
     keyword: 'tokyo valkyries card database',
     intent: 'Browse every card and effect.',
-    route: 'none',
+    route: '/cards',
     priority: 'P2',
-    status: 'watch',
+    status: 'keep',
     evidence:
-      'Player job is plausible, but no reliable complete public dataset exists.',
-    notes:
-      'A full database requires gameplay extraction and a maintenance plan.',
+      'Current card frames support a searchable first-party database surface.',
+    notes: 'Expand the same route as additional card effects become available.',
+  },
+  {
+    keyword: 'tokyo valkyries deck builder',
+    intent: 'Plan the current run deck and compare it with party attributes.',
+    route: '/deck-builder',
+    priority: 'P2',
+    status: 'keep',
+    evidence: 'The run combines card cost, type and matching party attributes.',
+    notes: 'Interactive planner with local persistence and shareable URLs.',
   },
 ];
