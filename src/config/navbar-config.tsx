@@ -3,193 +3,132 @@
 import { Routes } from '@/routes';
 import type { NestedMenuItem } from '@/types';
 import {
-  BadgeDollarSign,
   BookOpen,
   CalendarClock,
-  Database,
   Download,
   Gamepad2,
-  MessageCircle,
-  ShieldAlert,
+  Layers3,
+  Map,
+  Sparkles,
   Swords,
-  Trophy,
   UsersRound,
 } from 'lucide-react';
-import { useTranslations } from 'next-intl';
 
 export function useNavbarLinks(): NestedMenuItem[] {
-  const t = useTranslations('Marketing.navbar');
-
   return [
     {
-      title: t('guides.title'),
+      title: 'Guides',
       href: Routes.Guides,
       external: false,
       icon: <BookOpen className="size-4" />,
       items: [
         {
           title: 'Guide hub',
-          description: 'All Esports Manager 2026 decision guides.',
+          description: 'Every current Tokyo Valkyries guide in one index.',
           href: Routes.Guides,
           external: false,
           icon: <BookOpen className="size-4" />,
         },
         {
           title: 'Beginner guide',
-          description:
-            'First-save route for staff, scouting, contracts, and training.',
+          description: 'Party, deck, intent, route and first-boss priorities.',
           href: Routes.BeginnerGuide,
           external: false,
           icon: <Gamepad2 className="size-4" />,
         },
         {
-          title: 'Create organization',
-          description:
-            'Difficulty, starting roster, staff, sponsors, and setup.',
-          href: Routes.CreateOrganization,
+          title: 'Map routes',
+          description: 'Battle, Elite, Shop, Cafe, Locker and Anomaly choices.',
+          href: Routes.MapRoutes,
+          external: false,
+          icon: <Map className="size-4" />,
+        },
+      ],
+    },
+    {
+      title: 'Combat',
+      href: Routes.CombatAttributes,
+      external: false,
+      icon: <Swords className="size-4" />,
+      items: [
+        {
+          title: 'Combat and attributes',
+          description: 'Resolve, Courage, Hope, Dawn and enemy target intent.',
+          href: Routes.CombatAttributes,
+          external: false,
+          icon: <Swords className="size-4" />,
+        },
+        {
+          title: 'Deck building',
+          description: 'When to take, skip and upgrade cards.',
+          href: Routes.DeckBuilding,
+          external: false,
+          icon: <Layers3 className="size-4" />,
+        },
+        {
+          title: 'Cursed Swords and leaders',
+          description: 'Added attributes, party leaders and special skills.',
+          href: Routes.CursedSwordsLeaders,
+          external: false,
+          icon: <Sparkles className="size-4" />,
+        },
+      ],
+    },
+    {
+      title: 'World',
+      href: Routes.Characters,
+      external: false,
+      icon: <UsersRound className="size-4" />,
+      items: [
+        {
+          title: 'Characters',
+          description: 'Nine official profiles and the Japanese voice cast.',
+          href: Routes.Characters,
           external: false,
           icon: <UsersRound className="size-4" />,
         },
         {
-          title: 'Should you buy?',
-          description: 'Buyer-focused review and demo checklist.',
-          href: Routes.Review,
+          title: 'Story primer',
+          description: 'Haruka, Artesia, Grand Earth and the Underworld.',
+          href: Routes.Story,
           external: false,
           icon: <BookOpen className="size-4" />,
         },
       ],
     },
     {
-      title: t('romance.title'),
-      href: Routes.ScoutingTransfers,
-      external: false,
-      icon: <UsersRound className="size-4" />,
-      items: [
-        {
-          title: 'Scouting and transfers',
-          description: 'Find role fits without breaking wages.',
-          href: Routes.ScoutingTransfers,
-          external: false,
-          icon: <UsersRound className="size-4" />,
-        },
-        {
-          title: 'Contracts and budget',
-          description: 'Plan wages, transfer cash, and operating room.',
-          href: Routes.ContractsBudget,
-          external: false,
-          icon: <BadgeDollarSign className="size-4" />,
-        },
-        {
-          title: 'Training and morale',
-          description: 'Build skills without crushing the roster.',
-          href: Routes.TrainingMorale,
-          external: false,
-          icon: <Trophy className="size-4" />,
-        },
-      ],
-    },
-    {
-      title: t('tools.title'),
-      href: Routes.BestTactics,
-      external: false,
-      icon: <Swords className="size-4" />,
-      items: [
-        {
-          title: 'Best tactics',
-          description: 'Map, role, morale, economy, and patch-aware tactics.',
-          href: Routes.BestTactics,
-          external: false,
-          icon: <Swords className="size-4" />,
-        },
-        {
-          title: 'Tournaments and majors',
-          description: 'Plan events around readiness, morale, and sponsors.',
-          href: Routes.TournamentsMajors,
-          external: false,
-          icon: <Trophy className="size-4" />,
-        },
-        {
-          title: 'Sponsors and brand',
-          description:
-            'Use sponsorships and brand growth without overextending.',
-          href: Routes.SponsorsBrand,
-          external: false,
-          icon: <BadgeDollarSign className="size-4" />,
-        },
-      ],
-    },
-    {
-      title: t('platforms.title'),
+      title: 'Platforms',
       href: Routes.Platforms,
       external: false,
       icon: <Gamepad2 className="size-4" />,
       items: [
         {
           title: 'Release date',
-          description: 'Steam launch, price status, demo, and roadmap watch.',
+          description: 'July 2026 launch, price and language status.',
           href: Routes.ReleaseDate,
           external: false,
           icon: <CalendarClock className="size-4" />,
         },
         {
-          title: 'Demo guide',
-          description: 'What to test before buying.',
-          href: Routes.Demo,
-          external: false,
-          icon: <BookOpen className="size-4" />,
-        },
-        {
-          title: 'Platforms',
-          description: 'Steam, mobile roadmap, and platform status.',
-          href: Routes.Platforms,
+          title: 'Switch vs Steam',
+          description: 'Portability, achievements, cloud and version details.',
+          href: Routes.SwitchVsSteam,
           external: false,
           icon: <Gamepad2 className="size-4" />,
         },
         {
-          title: 'Steam Deck',
-          description: 'Readability, keyboard, SteamOS, and settings notes.',
-          href: Routes.SteamDeck,
+          title: 'PC requirements',
+          description: 'Official minimum and recommended Windows specs.',
+          href: Routes.SystemRequirements,
           external: false,
           icon: <Gamepad2 className="size-4" />,
         },
-      ],
-    },
-    {
-      title: t('database.title'),
-      href: Routes.Emdb,
-      external: false,
-      icon: <Database className="size-4" />,
-      items: [
         {
-          title: 'EMDB guide',
-          description:
-            'Steam sign-in, roster edits, exports, and custom data safety.',
-          href: Routes.Emdb,
-          external: false,
-          icon: <Database className="size-4" />,
-        },
-        {
-          title: t('download.title'),
-          description: 'Steam download, demo, and unsafe mirror warnings.',
+          title: 'Official download',
+          description: 'Steam and Nintendo links without APK or crack risk.',
           href: Routes.Download,
           external: false,
           icon: <Download className="size-4" />,
-        },
-        {
-          title: t('discord.title'),
-          description:
-            'Official Discord, Reddit, X, YouTube, and support links.',
-          href: Routes.Discord,
-          external: false,
-          icon: <MessageCircle className="size-4" />,
-        },
-        {
-          title: 'Mods safety',
-          description:
-            'Custom databases versus cheats, cracks, and fake downloads.',
-          href: Routes.ModsAndCheats,
-          external: false,
-          icon: <ShieldAlert className="size-4" />,
         },
       ],
     },

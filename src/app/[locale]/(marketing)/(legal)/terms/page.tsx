@@ -10,9 +10,9 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   return constructMetadata({
-    title: 'Terms of Service | Esports Manager 2026 Wiki',
+    title: 'Terms of Service | Tokyo Valkyries Wiki',
     description:
-      'Terms for using Esports Manager 2026 Wiki, an independent Esports Manager 2026 guide site.',
+      'Terms for using Tokyo Valkyries Wiki, an independent game guide site.',
     locale,
     pathname: '/terms',
   });
@@ -24,15 +24,15 @@ export default function TermsOfServicePage() {
       <Container className="max-w-3xl space-y-6 px-4">
         <h1 className="font-display text-4xl font-black">Terms of Service</h1>
         <p className="leading-8 text-[#A8C7D8]">
-          This site provides independent Esports Manager 2026 guides, source
-          notes, and official-link guidance. It is not affiliated with, endorsed
-          by, sponsored by, or operated by Neurona Games, indie.io, Valve,
-          Steam, Discord, Reddit, X, YouTube, or EMDB.
+          This site provides independent Tokyo Valkyries guides, source notes,
+          and official-link guidance. It is not affiliated with, endorsed by,
+          sponsored by, or operated by qureate, Valve, Steam, Nintendo, X, or
+          YouTube.
         </p>
         <p className="leading-8 text-[#A8C7D8]">
-          Player data, tactics, contract values, patch behavior, EMDB entries,
-          and platform support can change after game updates. Treat guide pages
-          as community-oriented guidance and verify important details in your
+          Card behavior, party advice, route choices, patch behavior, and
+          platform support can change after game updates. Treat guide pages as
+          community-oriented guidance and verify important details in your
           current game version.
         </p>
         <p className="leading-8 text-[#A8C7D8]">
@@ -41,7 +41,7 @@ export default function TermsOfServicePage() {
           trainers, or automation scripts.
         </p>
         <p className="leading-8 text-[#A8C7D8]">
-          Questions about these terms can be sent to hello@esportsmanager.wiki.
+          Questions about these terms can be sent to hello@tokyovalkyries.wiki.
         </p>
       </Container>
     </div>

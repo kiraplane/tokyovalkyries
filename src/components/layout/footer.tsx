@@ -17,12 +17,12 @@ export function Footer({ className }: React.HTMLAttributes<HTMLElement>) {
   return (
     <footer
       className={cn(
-        'border-[#1F3A4A] border-t bg-[#061018] text-[#EAF7FF]',
+        'border-[#3b2b62] border-t bg-[#070711] text-[#f8f6ff]',
         className
       )}
     >
       <Container className="px-4">
-        <div className="grid grid-cols-2 gap-8 py-16 md:grid-cols-6">
+        <div className="grid grid-cols-2 gap-8 py-16 md:grid-cols-7">
           <div className="flex flex-col items-start col-span-full md:col-span-2">
             <div className="space-y-4">
               {/* logo and name */}
@@ -48,7 +48,7 @@ export function Footer({ className }: React.HTMLAttributes<HTMLElement>) {
                       target="_blank"
                       rel="noreferrer"
                       aria-label={link.title}
-                      className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-[#1F3A4A] text-[#A8C7D8] hover:border-[#59D6FF] hover:bg-[#0E1B27] hover:text-[#EAF7FF]"
+                      className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-[#3b2b62] text-[#9f94ba] hover:border-[#54e7ff] hover:bg-[#111126] hover:text-[#f8f6ff]"
                     >
                       <span className="sr-only">{link.title}</span>
                       {link.icon ? link.icon : null}
@@ -123,7 +123,7 @@ export function Footer({ className }: React.HTMLAttributes<HTMLElement>) {
         </div>
       </Container>
 
-      <div className="border-[#1F3A4A] border-t py-8">
+      <div className="border-[#3b2b62] border-t py-8">
         <Container className="px-4 flex items-center justify-between gap-x-4">
           <span className="text-muted-foreground text-sm">
             &copy; {new Date().getFullYear()} {t('Metadata.name')} All Rights
@@ -131,9 +131,8 @@ export function Footer({ className }: React.HTMLAttributes<HTMLElement>) {
           </span>
 
           <span className="text-muted-foreground text-sm">
-            Independent Esports Manager 2026 guide site. Not affiliated with
-            Neurona Games, indie.io, Valve, Steam, Discord, Reddit, X, YouTube,
-            or EMDB.
+            Independent Tokyo Valkyries guide site. Not affiliated with qureate,
+            Valve, Steam, Nintendo or YouTube.
           </span>
         </Container>
       </div>

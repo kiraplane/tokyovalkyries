@@ -20,18 +20,19 @@ export const websiteConfig: WebsiteConfig = {
   },
   metadata: {
     images: {
-      ogImage: 'https://i.ytimg.com/vi/hb_t9aD3smo/hq720.jpg',
-      logoLight: '/android-chrome-192x192.png',
-      logoDark: '/android-chrome-192x192.png',
+      ogImage:
+        'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4093240/78820e864b501fdc97fbb661621b2d0332af3b1a/header.jpg',
+      logoLight: '/logo.svg',
+      logoDark: '/logo.svg',
     },
     social: {
       github: '',
-      twitter: '',
+      twitter: 'https://x.com/qureate',
       blueSky: '',
       discord: '',
       mastodon: '',
       linkedin: '',
-      youtube: '',
+      youtube: 'https://www.youtube.com/channel/UCerhAhpnanzS4fHGvQOGm-g',
     },
   },
   features: {
@@ -75,8 +76,8 @@ export const websiteConfig: WebsiteConfig = {
   },
   mail: {
     provider: 'resend',
-    fromEmail: 'Esports Manager 2026 <hello@esportsmanager.wiki>',
-    supportEmail: 'hello@esportsmanager.wiki',
+    fromEmail: 'Tokyo Valkyries <hello@tokyovalkyries.wiki>',
+    supportEmail: 'hello@tokyovalkyries.wiki',
   },
   newsletter: {
     enable: false,

@@ -10,9 +10,9 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   return constructMetadata({
-    title: 'Privacy Policy | Esports Manager 2026 Wiki',
+    title: 'Privacy Policy | Tokyo Valkyries Wiki',
     description:
-      'Privacy policy for Esports Manager 2026 Wiki, an independent guide site.',
+      'Privacy policy for Tokyo Valkyries Wiki, an independent guide site.',
     locale,
     pathname: '/privacy',
   });
@@ -24,9 +24,9 @@ export default function PrivacyPolicyPage() {
       <Container className="max-w-3xl space-y-6 px-4">
         <h1 className="font-display text-4xl font-black">Privacy Policy</h1>
         <p className="leading-8 text-[#A8C7D8]">
-          Esports Manager 2026 Wiki is an independent guide site. We do not
-          require accounts for browsing the wiki, platform pages, roster guides,
-          tactics guides, EMDB notes, or official-link pages.
+          Tokyo Valkyries Wiki is an independent guide site. We do not require
+          accounts for browsing the wiki, platform pages, roster guides, deck
+          guides, character notes, or official-link pages.
         </p>
         <p className="leading-8 text-[#A8C7D8]">
           Standard analytics or hosting logs may record aggregate traffic data
@@ -39,7 +39,7 @@ export default function PrivacyPolicyPage() {
           videos.
         </p>
         <p className="leading-8 text-[#A8C7D8]">
-          Privacy questions can be sent to hello@esportsmanager.wiki.
+          Privacy questions can be sent to hello@tokyovalkyries.wiki.
         </p>
       </Container>
     </div>

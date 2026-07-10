@@ -1,13 +1,16 @@
-# Esports Manager 2026 Wiki
+# Tokyo Valkyries Wiki
 
-Independent guide site for Esports Manager 2026 at `https://www.esportsmanager.wiki`.
+Independent English guide hub for **Tokyo Valkyries** at
+`https://www.tokyovalkyries.wiki`.
 
-## Scope
+The site covers the July 2026 Steam and Nintendo Switch release with:
 
-- Launch-week wiki hub for the esports management sim by Neurona Games, published by indie.io.
-- Core pages for beginner guide, organization setup, scouting, transfers, contracts, training, morale, tactics, tournaments, sponsors, release date, demo, platforms, Steam Deck, EMDB, review, download, Discord, and legal/disclaimer.
-- Source-aware guide articles with official links, YouTube-supported decision notes, Google autocomplete demand, and EMDB safety guidance.
-- No fake codes page, tier list, APK mirror, cracked client, trainer download, save editor, or unverified hard-value tables.
+- a compact beginner route for party, deck, enemy intent and map decisions;
+- Resolve, Courage, Hope and Dawn combat guidance;
+- deck-building, route-node, Cursed Sword and leader guides;
+- a nine-character spoiler-light roster sourced from qureate;
+- Steam/Switch comparison, PC requirements, review and safe download pages;
+- Article, BreadcrumbList, ItemList, WebSite, Organization and VideoGame schema.
 
 ## Development
 
@@ -16,20 +19,18 @@ pnpm install
 pnpm dev
 pnpm lint
 pnpm exec tsc --noEmit
+pnpm next:build
 pnpm build
 ```
 
-Canonical domain:
+## Source policy
 
-```txt
-https://www.esportsmanager.wiki
-```
+- Use the official Tokyo Valkyries website, Steam, Nintendo and qureate media
+  for stable facts.
+- Treat launch reviews and gameplay videos as cross-checks, not unquestioned
+  truth.
+- Do not publish fake codes, unsupported rankings, cracks, APK mirrors,
+  extracted game files or a card database without a reliable update workflow.
 
-## Source Rules
-
-- Prefer official Esports Manager 2026, Steam, Neurona Games, indie.io, official community, EMDB, and YouTube sources.
-- Use community pages and competitor results as public fact leads with source URLs and confidence labels; do not copy competitor prose or images.
-- Use YouTube videos as cross-checks and covers, not as copied article bodies.
-- Treat ratings, player data, contract values, and tactic recommendations as launch-week evolving data until live-game verification is stable.
-- Keep mobile, console, mods, cheats, and codes terms as watch/ignore unless official evidence appears.
-- Avoid unsafe downloads, APK mirrors, trainers, scripts, modified clients, and fake code generators.
+Tokyo Valkyries and official game materials belong to qureate and their
+respective rights holders.

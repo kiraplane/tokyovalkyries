@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">Tokyo Valkyries</title>
+  <desc id="desc">A neon V blade and four-point Tokyo star.</desc>
+  <defs>
+    <linearGradient id="bg" x1="10" y1="8" x2="118" y2="120" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#17112f"/>
+      <stop offset="1" stop-color="#070711"/>
+    </linearGradient>
+    <linearGradient id="blade" x1="22" y1="20" x2="104" y2="110" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#54e7ff"/>
+      <stop offset="0.48" stop-color="#f8f6ff"/>
+      <stop offset="1" stop-color="#ff4fd8"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="128" height="128" rx="24" fill="url(#bg)"/>
+  <path d="M22 28 54 108h20l32-80-20 11-22 50-22-50z" fill="url(#blade)" filter="url(#glow)"/>
+  <path d="M64 12c2.6 12.7 5.8 15.9 18.5 18.5C69.8 33.1 66.6 36.3 64 49c-2.6-12.7-5.8-15.9-18.5-18.5C58.2 27.9 61.4 24.7 64 12Z" fill="#ff4fd8" filter="url(#glow)"/>
+  <path d="M96 68c1.3 6.4 2.9 8 9.3 9.3-6.4 1.3-8 2.9-9.3 9.3-1.3-6.4-2.9-8-9.3-9.3 6.4-1.3 8-2.9 9.3-9.3Z" fill="#54e7ff"/>
+</svg>

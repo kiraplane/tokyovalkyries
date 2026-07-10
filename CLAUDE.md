@@ -63,7 +63,7 @@ This is a Next.js 15 full-stack SaaS application with the following key architec
 - Customer portal for subscription management
 
 ### Feature Modules
-- **Game of Thrones Dragonfire Wiki**: codes status, dragon tier list, dragon profiles, guides, campaign reset notes, Reigns, resources, alliances, factions, Stronghold, updates, downloads, and disclaimers
+- **Tokyo Valkyries Wiki**: beginner, combat attributes, deck building, map routes, Cursed Sword leaders, character roster, story, platform, review, download, and disclaimer pages
 - **Newsletter**: Email subscription system
 - **Analytics**: Multiple analytics providers support
 - **Storage**: S3 integration for file uploads
@@ -99,5 +99,5 @@ This is a Next.js 15 full-stack SaaS application with the following key architec
 - The project uses pnpm as the package manager
 - Database schema is in `src/db/schema.ts` with auth, payment, and credit tables
 - Email templates are in `src/mail/templates/`
-- The app supports both light and dark themes
+- The public wiki uses a fixed neon-dark theme inspired by the game UI
 - The project includes comprehensive internationalization support

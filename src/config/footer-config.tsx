@@ -2,185 +2,73 @@
 
 import { Routes } from '@/routes';
 import type { NestedMenuItem } from '@/types';
-import { useTranslations } from 'next-intl';
 
 export function useFooterLinks(): NestedMenuItem[] {
-  const t = useTranslations('Marketing.footer');
-
   return [
     {
-      title: t('start.title'),
+      title: 'Start',
       items: [
         {
-          title: t('start.items.beginner'),
+          title: 'Beginner Guide',
           href: Routes.BeginnerGuide,
           external: false,
         },
+        { title: 'Guide Hub', href: Routes.Guides, external: false },
+        { title: 'Should You Buy?', href: Routes.Review, external: false },
+      ],
+    },
+    {
+      title: 'Combat',
+      items: [
+        { title: 'Attributes', href: Routes.CombatAttributes, external: false },
+        { title: 'Deck Building', href: Routes.DeckBuilding, external: false },
+        { title: 'Map Routes', href: Routes.MapRoutes, external: false },
         {
-          title: t('start.items.release'),
-          href: Routes.ReleaseDate,
-          external: false,
-        },
-        {
-          title: t('start.items.demo'),
-          href: Routes.Demo,
-          external: false,
-        },
-        {
-          title: t('start.items.platforms'),
-          href: Routes.Platforms,
+          title: 'Cursed Swords',
+          href: Routes.CursedSwordsLeaders,
           external: false,
         },
       ],
     },
     {
-      title: t('guides.title'),
+      title: 'World',
       items: [
-        {
-          title: t('guides.items.all'),
-          href: Routes.Guides,
-          external: false,
-        },
-        {
-          title: t('guides.items.beginner'),
-          href: Routes.BeginnerGuide,
-          external: false,
-        },
-        {
-          title: t('guides.items.romance'),
-          href: Routes.ScoutingTransfers,
-          external: false,
-        },
-        {
-          title: t('guides.items.gifts'),
-          href: Routes.ContractsBudget,
-          external: false,
-        },
-        {
-          title: t('guides.items.farming'),
-          href: Routes.TrainingMorale,
-          external: false,
-        },
-        {
-          title: t('guides.items.magic'),
-          href: Routes.BestTactics,
-          external: false,
-        },
-        {
-          title: t('guides.items.nokturna'),
-          href: Routes.TournamentsMajors,
-          external: false,
-        },
-        {
-          title: t('guides.items.walkthrough'),
-          href: Routes.SponsorsBrand,
-          external: false,
-        },
+        { title: 'Characters', href: Routes.Characters, external: false },
+        { title: 'Story Primer', href: Routes.Story, external: false },
       ],
     },
     {
-      title: t('database.title'),
+      title: 'Platforms',
       items: [
+        { title: 'Release Date', href: Routes.ReleaseDate, external: false },
         {
-          title: t('database.items.all'),
-          href: Routes.Emdb,
+          title: 'Switch vs Steam',
+          href: Routes.SwitchVsSteam,
           external: false,
         },
         {
-          title: t('database.items.characters'),
-          href: Routes.CreateOrganization,
+          title: 'PC Requirements',
+          href: Routes.SystemRequirements,
           external: false,
         },
-        {
-          title: t('database.items.families'),
-          href: Routes.ScoutingTransfers,
-          external: false,
-        },
-        {
-          title: t('database.items.locations'),
-          href: Routes.ContractsBudget,
-          external: false,
-        },
-        {
-          title: t('database.items.items'),
-          href: Routes.TrainingMorale,
-          external: false,
-        },
+        { title: 'Official Download', href: Routes.Download, external: false },
       ],
     },
     {
-      title: t('tools.title'),
+      title: 'Legal',
       items: [
+        { title: 'Disclaimer', href: Routes.Disclaimer, external: false },
         {
-          title: t('tools.items.all'),
-          href: Routes.BestTactics,
-          external: false,
-        },
-        {
-          title: t('tools.items.platformPicker'),
-          href: Routes.TournamentsMajors,
-          external: false,
-        },
-        {
-          title: t('tools.items.romanceTracker'),
-          href: Routes.SponsorsBrand,
-          external: false,
-        },
-        {
-          title: t('tools.items.itemTracker'),
-          href: Routes.Review,
-          external: false,
-        },
-        {
-          title: t('tools.items.farmingCalculator'),
-          href: Routes.SteamDeck,
-          external: false,
-        },
-      ],
-    },
-    {
-      title: t('official.title'),
-      items: [
-        {
-          title: t('official.items.discord'),
-          href: Routes.Discord,
-          external: false,
-        },
-        {
-          title: t('official.items.download'),
-          href: Routes.Download,
-          external: false,
-        },
-        {
-          title: t('official.items.cheats'),
-          href: Routes.ModsAndCheats,
-          external: false,
-        },
-        {
-          title: t('official.items.disclaimer'),
-          href: Routes.Disclaimer,
-          external: false,
-        },
-      ],
-    },
-    {
-      title: t('legal.title'),
-      items: [
-        {
-          title: t('legal.items.privacyPolicy'),
+          title: 'Privacy Policy',
           href: Routes.PrivacyPolicy,
           external: false,
         },
         {
-          title: t('legal.items.termsOfService'),
+          title: 'Terms of Service',
           href: Routes.TermsOfService,
           external: false,
         },
-        {
-          title: t('legal.items.cookiePolicy'),
-          href: Routes.CookiePolicy,
-          external: false,
-        },
+        { title: 'Cookie Policy', href: Routes.CookiePolicy, external: false },
       ],
     },
   ];

@@ -6,20 +6,20 @@ import Image from 'next/image';
 export function Logo({ className }: { className?: string }) {
   return (
     <span
-      aria-label="Esports Manager 2026 logo"
-      title="Esports Manager 2026"
+      aria-label="Tokyo Valkyries logo"
+      title="Tokyo Valkyries"
       className={cn(
-        'relative inline-flex size-11 shrink-0 items-center justify-center overflow-hidden rounded-md',
-        'border border-[#59D6FF]/60 bg-[#061018] shadow-[0_0_30px_rgba(89,214,255,0.2)]',
+        'relative inline-flex size-10 shrink-0 items-center justify-center overflow-hidden rounded-lg',
+        'bg-[#090916] shadow-[0_0_24px_rgba(255,79,216,0.22)]',
         className
       )}
     >
       <Image
-        src="/android-chrome-192x192.png"
+        src="/logo.svg"
         alt=""
         fill
-        sizes="44px"
-        className="object-cover"
+        sizes="40px"
+        className="object-contain"
       />
     </span>
   );

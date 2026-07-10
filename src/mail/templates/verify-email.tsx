@@ -35,6 +35,6 @@ export default function VerifyEmail({
 VerifyEmail.PreviewProps = {
   locale: routing.defaultLocale,
   messages: defaultMessages,
-  url: 'https://www.esportsmanager.wiki',
+  url: 'https://www.tokyovalkyries.wiki',
   name: 'username',
 };

@@ -1,19 +1,16 @@
+import { getCanonicalBaseUrl } from '@/lib/urls/urls';
 import type { MetadataRoute } from 'next';
-import { getCanonicalBaseUrl } from '../lib/urls/urls';
 
 export default function robots(): MetadataRoute.Robots {
+  const baseUrl = getCanonicalBaseUrl();
+
   return {
     rules: {
       userAgent: '*',
       allow: '/',
-      disallow: [
-        '/api/*',
-        '/_next/*',
-        '/settings/*',
-        '/dashboard/*',
-        '/auth/*',
-      ],
+      disallow: ['/api/', '/auth/', '/dashboard/', '/settings/', '/admin/'],
     },
-    sitemap: `${getCanonicalBaseUrl()}/sitemap.xml`,
+    sitemap: `${baseUrl}/sitemap.xml`,
+    host: baseUrl,
   };
 }

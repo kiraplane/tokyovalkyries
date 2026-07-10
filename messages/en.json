@@ -1,8 +1,8 @@
 {
   "Metadata": {
-    "name": "Esports Manager 2026",
-    "title": "Esports Manager 2026 Wiki - Guides, Tactics, EMDB and Steam",
-    "description": "Esports Manager 2026 wiki for beginner guides, tactics, scouting, transfers, contracts, training, sponsors, EMDB, Steam, demo, and safe links."
+    "name": "Tokyo Valkyries",
+    "title": "Tokyo Valkyries Wiki - Deck, Character and Beginner Guides",
+    "description": "Tokyo Valkyries wiki with beginner, deck, combat, map, character, Cursed Sword, Switch, Steam and story guides."
   },
   "Common": {
     "premium": "Premium",
@@ -54,7 +54,7 @@
   },
   "PricingPage": {
     "title": "Pricing",
-    "description": "Optional supporter plans for keeping Esports Manager 2026 Wiki maintained",
+    "description": "Optional supporter plans for keeping Tokyo Valkyries Wiki maintained",
     "subtitle": "Simple support options for readers who want to help maintain current guides and hosting",
     "monthly": "Monthly",
     "yearly": "Yearly",
@@ -80,11 +80,11 @@
   "PricePlans": {
     "free": {
       "name": "Free",
-      "description": "Browse Esports Manager 2026 Wiki with no payment required",
+      "description": "Browse Tokyo Valkyries Wiki with no payment required",
       "features": {
-        "feature-1": "Launch, platform, demo, and official-link guidance",
-        "feature-2": "Beginner, scouting, contracts, training, tactics, tournaments, and sponsor guides",
-        "feature-3": "Steam, demo, EMDB, Steam Deck, download, Discord, and safety pages",
+        "feature-1": "Launch, platform, review, and official-link guidance",
+        "feature-2": "Beginner, combat, deck, route, character, and story guides",
+        "feature-3": "Deck, combat, map, character, Steam, Switch, and safety pages",
         "feature-4": "Guide pages updated as sources change"
       },
       "limits": {
@@ -113,7 +113,7 @@
     },
     "max": {
       "name": "Backer",
-      "description": "For heavier support of Esports Manager 2026 Wiki maintenance",
+      "description": "For heavier support of Tokyo Valkyries Wiki maintenance",
       "features": {
         "feature-1": "Support expanded guide coverage",
         "feature-2": "Help fund more frequent source reviews",
@@ -297,38 +297,38 @@
         "title": "Platforms"
       },
       "database": {
-        "title": "EMDB"
+        "title": "Characters"
       },
       "tools": {
-        "title": "Tactics"
+        "title": "Combat"
       },
       "romance": {
-        "title": "Roster"
+        "title": "World"
       },
       "farming": {
-        "title": "Contracts"
+        "title": "Decks"
       },
       "magic": {
-        "title": "Training"
+        "title": "Routes"
       },
       "nokturna": {
-        "title": "Sponsors"
+        "title": "Story"
       },
       "download": {
         "title": "Download"
       },
       "discord": {
-        "title": "Discord"
+        "title": "Official"
       }
     },
     "footer": {
-      "tagline": "Independent Esports Manager 2026 wiki for Steam launch setup, scouting, contracts, tactics, EMDB, demo, and safe links.",
+      "tagline": "Tokyo Valkyries wiki for party attributes, deck building, map routes, characters, Cursed Swords, Steam, Switch and safe links.",
       "start": {
         "title": "Start",
         "items": {
           "beginner": "Beginner Guide",
           "release": "Release Date",
-          "demo": "Demo Guide",
+          "demo": "Combat Guide",
           "platforms": "Platforms"
         }
       },
@@ -348,7 +348,7 @@
       "database": {
         "title": "Data",
         "items": {
-          "all": "EMDB Guide",
+          "all": "Character Roster",
           "characters": "Create Org",
           "families": "Scouting",
           "locations": "Contracts",

@@ -96,6 +96,10 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'img.itch.zone',
       },
+      {
+        protocol: 'https',
+        hostname: 'shared.akamai.steamstatic.com',
+      },
     ],
   },
 };

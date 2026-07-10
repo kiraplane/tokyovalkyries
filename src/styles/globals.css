@@ -1,7 +1,7 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-/* Esports Manager 2026 - competitive management guide theme */
+/* Tokyo Valkyries - neon Tokyo card-battle wiki theme */
 
 :root {
   --font-noto-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
@@ -258,46 +258,46 @@
 }
 
 :root {
-  --background: #0a0f0c;
-  --foreground: #f7e8c9;
-  --card: #111612;
-  --card-foreground: #f7e8c9;
-  --popover: #111612;
-  --popover-foreground: #f7e8c9;
+  --background: #070711;
+  --foreground: #f8f6ff;
+  --card: #111126;
+  --card-foreground: #f8f6ff;
+  --popover: #111126;
+  --popover-foreground: #f8f6ff;
 
-  --primary: #d9b56a;
-  --primary-foreground: #15110b;
+  --primary: #ff4fd8;
+  --primary-foreground: #110715;
 
-  --secondary: #6ea69a;
-  --secondary-foreground: #0a0f0c;
+  --secondary: #54e7ff;
+  --secondary-foreground: #081014;
 
-  --muted: #141916;
-  --muted-foreground: #c7baa7;
+  --muted: #1b1634;
+  --muted-foreground: #bdb3d2;
 
-  --accent: #201418;
-  --accent-foreground: #f7e8c9;
+  --accent: #23143a;
+  --accent-foreground: #f8f6ff;
 
-  --destructive: #b5444f;
-  --destructive-foreground: #fff2e0;
+  --destructive: #ff4b6e;
+  --destructive-foreground: #fff5f8;
 
-  --border: #493a34;
-  --input: #493a34;
-  --ring: #d9b56a;
+  --border: #3b2b62;
+  --input: #3b2b62;
+  --ring: #54e7ff;
 
-  --chart-1: #d9b56a;
-  --chart-2: #6ea69a;
-  --chart-3: #b5444f;
-  --chart-4: #7b2635;
-  --chart-5: #f7e8c9;
+  --chart-1: #ff4fd8;
+  --chart-2: #54e7ff;
+  --chart-3: #62e6a7;
+  --chart-4: #ffd166;
+  --chart-5: #8d7cff;
 
-  --sidebar: #0a0f0c;
-  --sidebar-foreground: #f7e8c9;
-  --sidebar-primary: #d9b56a;
-  --sidebar-primary-foreground: #15110b;
-  --sidebar-accent: #141916;
-  --sidebar-accent-foreground: #f7e8c9;
-  --sidebar-border: #493a34;
-  --sidebar-ring: #d9b56a;
+  --sidebar: #090916;
+  --sidebar-foreground: #f8f6ff;
+  --sidebar-primary: #ff4fd8;
+  --sidebar-primary-foreground: #110715;
+  --sidebar-accent: #1b1634;
+  --sidebar-accent-foreground: #f8f6ff;
+  --sidebar-border: #3b2b62;
+  --sidebar-ring: #54e7ff;
   --font-sans: var(--font-noto-sans);
   --font-serif: var(--font-noto-serif);
   --font-mono: var(--font-noto-sans-mono);
@@ -383,11 +383,11 @@ body {
 }
 
 /*
- * Esports Manager 2026 theme colors
+ * Tokyo Valkyries theme colors
  */
 .theme-default {
-  --primary: #e3483b;
-  --primary-foreground: #170b0a;
+  --primary: #ff4fd8;
+  --primary-foreground: #110715;
 }
 
 .theme-blue {

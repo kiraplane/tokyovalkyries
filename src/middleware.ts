@@ -18,7 +18,6 @@ import {
 const intlMiddleware = createMiddleware(routing);
 const hasSingleLocale = LOCALES.length === 1;
 const defaultLocalePrefix = `/${DEFAULT_LOCALE}`;
-
 const authRelatedRoutes = [
   ...protectedRoutes,
   ...routesNotAllowedByLoggedInUsers,
@@ -41,137 +40,45 @@ const retiredPublicRouteRedirects: Array<{
   { pattern: /^\/settings(?:\/.*)?$/, target: '/' },
   { pattern: /^\/payment(?:\/.*)?$/, target: '/' },
   { pattern: /^\/codes(?:\/.*)?$/, target: '/' },
-  { pattern: /^\/tier-list(?:\/.*)?$/, target: '/guides' },
-  { pattern: /^\/save-editor(?:\/.*)?$/, target: '/guides' },
-  { pattern: /^\/updates(?:\/.*)?$/, target: '/guides' },
-  { pattern: /^\/steam\/?$/, target: '/release-date' },
+  { pattern: /^\/tier-list(?:\/.*)?$/, target: '/combat-attributes' },
+  { pattern: /^\/cards(?:\/.*)?$/, target: '/deck-building' },
+  { pattern: /^\/deck(?:\/.*)?$/, target: '/deck-building' },
+  { pattern: /^\/attributes?(?:\/.*)?$/, target: '/combat-attributes' },
+  { pattern: /^\/combat(?:\/.*)?$/, target: '/combat-attributes' },
+  { pattern: /^\/map(?:\/.*)?$/, target: '/map-routes' },
+  { pattern: /^\/cursed-swords?(?:\/.*)?$/, target: '/cursed-swords-leaders' },
+  { pattern: /^\/leaders?(?:\/.*)?$/, target: '/cursed-swords-leaders' },
+  { pattern: /^\/cast(?:\/.*)?$/, target: '/characters' },
+  { pattern: /^\/steam\/?$/, target: '/platforms' },
+  { pattern: /^\/switch\/?$/, target: '/switch-vs-steam' },
+  { pattern: /^\/pc\/?$/, target: '/platforms' },
+  { pattern: /^\/requirements\/?$/, target: '/system-requirements' },
   { pattern: /^\/release\/?$/, target: '/release-date' },
+  { pattern: /^\/buy\/?$/, target: '/download' },
+  { pattern: /^\/apk(?:\/.*)?$/, target: '/download' },
   {
-    pattern: /^\/esports-manager-2026-release(?:\/.*)?$/,
+    pattern: /^\/tokyo-valkyries-beginner-guide(?:\/.*)?$/,
+    target: '/guides/beginner-guide',
+  },
+  {
+    pattern: /^\/tokyo-valkyries-release-date(?:\/.*)?$/,
     target: '/release-date',
   },
-  { pattern: /^\/esports-manager-2026-demo(?:\/.*)?$/, target: '/demo' },
   {
-    pattern: /^\/esports-manager-2026-platforms(?:\/.*)?$/,
-    target: '/platforms',
-  },
-  { pattern: /^\/esports-manager-2026-switch(?:\/.*)?$/, target: '/platforms' },
-  {
-    pattern: /^\/esports-manager-2026-switch-2(?:\/.*)?$/,
-    target: '/platforms',
+    pattern: /^\/tokyo-valkyries-switch(?:\/.*)?$/,
+    target: '/switch-vs-steam',
   },
   {
-    pattern: /^\/esports-manager-2026-steam-deck(?:\/.*)?$/,
-    target: '/steam-deck',
-  },
-  { pattern: /^\/esports-manager-2026-database(?:\/.*)?$/, target: '/emdb' },
-  {
-    pattern: /^\/esports-manager-2026-character-database(?:\/.*)?$/,
-    target: '/guides/scouting-transfers',
-  },
-  {
-    pattern: /^\/esports-manager-2026-characters-database(?:\/.*)?$/,
-    target: '/guides/scouting-transfers',
-  },
-  {
-    pattern: /^\/esports-manager-2026-families(?:\/.*)?$/,
-    target: '/guides/scouting-transfers',
-  },
-  {
-    pattern: /^\/esports-manager-2026-family-database(?:\/.*)?$/,
-    target: '/guides/scouting-transfers',
-  },
-  {
-    pattern: /^\/esports-manager-2026-locations(?:\/.*)?$/,
-    target: '/guides/tournaments-majors',
-  },
-  {
-    pattern: /^\/esports-manager-2026-location-database(?:\/.*)?$/,
-    target: '/guides/tournaments-majors',
-  },
-  { pattern: /^\/esports-manager-2026-items(?:\/.*)?$/, target: '/emdb' },
-  {
-    pattern: /^\/esports-manager-2026-tools(?:\/.*)?$/,
-    target: '/best-tactics',
-  },
-  {
-    pattern: /^\/esports-manager-2026-platform-picker(?:\/.*)?$/,
+    pattern: /^\/tokyo-valkyries-steam(?:\/.*)?$/,
     target: '/platforms',
   },
   {
-    pattern: /^\/esports-manager-2026-romance-tracker(?:\/.*)?$/,
-    target: '/guides/scouting-transfers',
+    pattern: /^\/tokyo-valkyries-characters(?:\/.*)?$/,
+    target: '/characters',
   },
   {
-    pattern: /^\/esports-manager-2026-item-tracker(?:\/.*)?$/,
-    target: '/emdb',
-  },
-  {
-    pattern: /^\/esports-manager-2026-farming-calculator(?:\/.*)?$/,
-    target: '/guides/contracts-budget',
-  },
-  {
-    pattern: /^\/esports-manager-2026-crop-calculator(?:\/.*)?$/,
-    target: '/guides/contracts-budget',
-  },
-  {
-    pattern: /^\/esports-manager-2026-characters(?:\/.*)?$/,
-    target: '/guides/scouting-transfers',
-  },
-  {
-    pattern: /^\/esports-manager-2026-romance(?:\/.*)?$/,
-    target: '/guides/scouting-transfers',
-  },
-  {
-    pattern: /^\/esports-manager-2026-gifts(?:\/.*)?$/,
-    target: '/guides/contracts-budget',
-  },
-  {
-    pattern: /^\/esports-manager-2026-gift-guide(?:\/.*)?$/,
-    target: '/guides/contracts-budget',
-  },
-  {
-    pattern: /^\/esports-manager-2026-farming(?:\/.*)?$/,
-    target: '/guides/training-morale',
-  },
-  {
-    pattern: /^\/esports-manager-2026-magic(?:\/.*)?$/,
-    target: '/best-tactics',
-  },
-  {
-    pattern: /^\/esports-manager-2026-nokturna(?:\/.*)?$/,
-    target: '/guides/tournaments-majors',
-  },
-  { pattern: /^\/download-esports-manager-2026\/?$/, target: '/download' },
-  { pattern: /^\/esports-manager-2026-download\/?$/, target: '/download' },
-  { pattern: /^\/esports-manager-2026-apk\/?$/, target: '/download' },
-  { pattern: /^\/android-download\/?$/, target: '/download' },
-  { pattern: /^\/esports-manager-2026-mobile\/?$/, target: '/platforms' },
-  {
-    pattern: /^\/esports-manager-2026-cheats(?:\/.*)?$/,
-    target: '/mods-and-cheats',
-  },
-  {
-    pattern: /^\/esports-manager-2026-codes(?:\/.*)?$/,
-    target: '/mods-and-cheats',
-  },
-  { pattern: /^\/esports-manager-2026-discord\/?$/, target: '/discord' },
-  { pattern: /^\/esports-manager-2026-steam\/?$/, target: '/release-date' },
-  {
-    pattern: /^\/esports-manager-2026-cards\/?$/,
-    target: '/guides/tournaments-majors',
-  },
-  {
-    pattern: /^\/esports-manager-2026-walkthrough\/?$/,
-    target: '/guides/beginner-guide',
-  },
-  {
-    pattern: /^\/esports-manager-2026-tactics(?:\/.*)?$/,
-    target: '/best-tactics',
-  },
-  {
-    pattern: /^\/esports-manager-2026-tips(?:\/.*)?$/,
-    target: '/guides/beginner-guide',
+    pattern: /^\/tokyo-valkyries-download(?:\/.*)?$/,
+    target: '/download',
   },
 ];
 
@@ -181,10 +88,10 @@ export default async function middleware(req: NextRequest) {
   const hostname = hostHeader?.split(':')[0].toLowerCase();
   const forwardedProto = req.headers.get('x-forwarded-proto');
   const productionHosts = new Set([
-    'esportsmanager.wiki',
-    'www.esportsmanager.wiki',
+    'tokyovalkyries.wiki',
+    'www.tokyovalkyries.wiki',
   ]);
-  const canonicalHost = 'www.esportsmanager.wiki';
+  const canonicalHost = 'www.tokyovalkyries.wiki';
 
   if (
     hostname &&
@@ -216,8 +123,12 @@ export default async function middleware(req: NextRequest) {
       preferredLocale !== DEFAULT_LOCALE &&
       LOCALES.includes(preferredLocale)
     ) {
-      const localizedPath = `/${preferredLocale}${nextUrl.pathname}${nextUrl.search}${nextUrl.hash}`;
-      return NextResponse.redirect(new URL(localizedPath, nextUrl));
+      return NextResponse.redirect(
+        new URL(
+          `/${preferredLocale}${nextUrl.pathname}${nextUrl.search}${nextUrl.hash}`,
+          nextUrl
+        )
+      );
     }
   }
 
@@ -225,11 +136,6 @@ export default async function middleware(req: NextRequest) {
     nextUrl.pathname,
     LOCALES
   );
-  const normalizedPathnameWithoutLocale =
-    pathnameWithoutLocale.length > 1
-      ? pathnameWithoutLocale.replace(/\/$/, '')
-      : pathnameWithoutLocale;
-
   const retiredRoute = retiredPublicRouteRedirects.find(({ pattern }) =>
     pattern.test(pathnameWithoutLocale)
   );
@@ -261,12 +167,9 @@ export default async function middleware(req: NextRequest) {
         nextUrl.pathname === '/'
           ? defaultLocalePrefix
           : `${defaultLocalePrefix}${nextUrl.pathname}`;
-      const localizedUrl = new URL(
-        `${localizedPath}${nextUrl.search}`,
-        nextUrl
+      return NextResponse.rewrite(
+        new URL(`${localizedPath}${nextUrl.search}`, nextUrl)
       );
-
-      return NextResponse.rewrite(localizedUrl);
     }
 
     return intlMiddleware(req);
@@ -276,12 +179,10 @@ export default async function middleware(req: NextRequest) {
   try {
     const result = await betterFetch<Session>('/api/auth/get-session', {
       baseURL: getBaseUrl(),
-      headers: {
-        cookie: req.headers.get('cookie') || '',
-      },
+      headers: { cookie: req.headers.get('cookie') || '' },
     });
     session = result.data;
-  } catch (error) {
+  } catch {
     session = null;
   }
   const isLoggedIn = !!session;
@@ -300,13 +201,12 @@ export default async function middleware(req: NextRequest) {
   );
 
   if (!isLoggedIn && isProtectedRoute) {
-    let callbackUrl = nextUrl.pathname;
-    if (nextUrl.search) {
-      callbackUrl += nextUrl.search;
-    }
-    const encodedCallbackUrl = encodeURIComponent(callbackUrl);
+    const callbackUrl = `${nextUrl.pathname}${nextUrl.search}`;
     return NextResponse.redirect(
-      new URL(`/auth/login?callbackUrl=${encodedCallbackUrl}`, nextUrl)
+      new URL(
+        `/auth/login?callbackUrl=${encodeURIComponent(callbackUrl)}`,
+        nextUrl
+      )
     );
   }
 
@@ -319,9 +219,9 @@ export default async function middleware(req: NextRequest) {
       nextUrl.pathname === '/'
         ? defaultLocalePrefix
         : `${defaultLocalePrefix}${nextUrl.pathname}`;
-    const localizedUrl = new URL(`${localizedPath}${nextUrl.search}`, nextUrl);
-
-    return NextResponse.rewrite(localizedUrl);
+    return NextResponse.rewrite(
+      new URL(`${localizedPath}${nextUrl.search}`, nextUrl)
+    );
   }
 
   return intlMiddleware(req);

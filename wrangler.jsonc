@@ -1,26 +1,26 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "main": ".open-next/worker.js",
-  "name": "esportsmanager",
+  "name": "tokyovalkyries",
   "workers_dev": true,
   "preview_urls": true,
   "keep_vars": true,
   "vars": {
     "ADSTERRA_ADS_ENABLED": "false",
-    "NEXT_PUBLIC_GOOGLE_ANALYTICS_ID": "G-K1ZMLJRCGE"
+    "NEXT_PUBLIC_GOOGLE_ANALYTICS_ID": "G-P98QXDY51G"
   },
   "compatibility_date": "2025-04-01",
   "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
   "routes": [
     {
-      "pattern": "esportsmanager.wiki",
+      "pattern": "tokyovalkyries.wiki",
       "custom_domain": true,
-      "zone_name": "esportsmanager.wiki"
+      "zone_name": "tokyovalkyries.wiki"
     },
     {
-      "pattern": "www.esportsmanager.wiki",
+      "pattern": "www.tokyovalkyries.wiki",
       "custom_domain": true,
-      "zone_name": "esportsmanager.wiki"
+      "zone_name": "tokyovalkyries.wiki"
     }
   ],
   "build": {
