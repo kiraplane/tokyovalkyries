@@ -75,4 +75,4 @@ export const characters: Character[] = [
   },
 ];
 
-export const characterCheckedAt = '2026-07-10';
+export const characterCheckedAt = '2026-07-11';
