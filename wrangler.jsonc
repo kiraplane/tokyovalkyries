@@ -6,7 +6,6 @@
   "preview_urls": true,
   "keep_vars": true,
   "vars": {
-    "ADSTERRA_ADS_ENABLED": "false",
     "NEXT_PUBLIC_GOOGLE_ANALYTICS_ID": "G-P98QXDY51G"
   },
   "compatibility_date": "2025-04-01",
@@ -24,7 +23,7 @@
     }
   ],
   "build": {
-    "command": "ADSTERRA_ADS_ENABLED=false pnpm run cf:build"
+    "command": "pnpm run cf:build"
   },
   "assets": {
     "directory": ".open-next/assets",
