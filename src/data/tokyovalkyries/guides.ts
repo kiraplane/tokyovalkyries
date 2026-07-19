@@ -1,7 +1,7 @@
 import { siteDescription } from './sources';
 import type { Guide, GuideVideo } from './types';
 
-const checkedAt = '2026-07-17';
+const checkedAt = '2026-07-19';
 const publishedAt = '2026-07-10';
 
 const steamScreenshot = (asset: string) =>
