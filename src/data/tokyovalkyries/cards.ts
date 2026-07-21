@@ -41,7 +41,7 @@ export const cards: TokyoValkyriesCard[] = [
     roles: ['Damage'],
     internalEvidence: {
       asset: 'battle-card-frame-00',
-      checkedAt: '2026-07-20',
+      checkedAt: '2026-07-21',
       confidence: 'high',
     },
   },
@@ -57,7 +57,7 @@ export const cards: TokyoValkyriesCard[] = [
     roles: ['Defense'],
     internalEvidence: {
       asset: 'shop-card-frame-11',
-      checkedAt: '2026-07-20',
+      checkedAt: '2026-07-21',
       confidence: 'high',
     },
   },
@@ -73,7 +73,7 @@ export const cards: TokyoValkyriesCard[] = [
     roles: ['Setup'],
     internalEvidence: {
       asset: 'shop-card-frame-11',
-      checkedAt: '2026-07-20',
+      checkedAt: '2026-07-21',
       confidence: 'high',
     },
   },
@@ -89,7 +89,7 @@ export const cards: TokyoValkyriesCard[] = [
     roles: ['Damage'],
     internalEvidence: {
       asset: 'shop-card-frame-11',
-      checkedAt: '2026-07-20',
+      checkedAt: '2026-07-21',
       confidence: 'high',
     },
   },
@@ -105,7 +105,7 @@ export const cards: TokyoValkyriesCard[] = [
     roles: ['Control'],
     internalEvidence: {
       asset: 'shop-card-frame-11',
-      checkedAt: '2026-07-20',
+      checkedAt: '2026-07-21',
       confidence: 'high',
     },
   },
@@ -121,7 +121,7 @@ export const cards: TokyoValkyriesCard[] = [
     roles: ['Damage'],
     internalEvidence: {
       asset: 'shop-card-frame-11',
-      checkedAt: '2026-07-20',
+      checkedAt: '2026-07-21',
       confidence: 'high',
     },
   },
@@ -137,7 +137,7 @@ export const cards: TokyoValkyriesCard[] = [
     roles: ['Damage', 'Control'],
     internalEvidence: {
       asset: 'reward-detail-frame-12',
-      checkedAt: '2026-07-20',
+      checkedAt: '2026-07-21',
       confidence: 'high',
     },
   },
@@ -153,7 +153,7 @@ export const cards: TokyoValkyriesCard[] = [
     roles: ['Damage'],
     internalEvidence: {
       asset: 'reward-card-frame-12',
-      checkedAt: '2026-07-20',
+      checkedAt: '2026-07-21',
       confidence: 'high',
     },
   },
@@ -169,7 +169,7 @@ export const cards: TokyoValkyriesCard[] = [
     roles: ['Defense'],
     internalEvidence: {
       asset: 'shop-card-frame-11',
-      checkedAt: '2026-07-20',
+      checkedAt: '2026-07-21',
       confidence: 'high',
     },
   },
@@ -185,7 +185,7 @@ export const cards: TokyoValkyriesCard[] = [
     roles: ['Damage'],
     internalEvidence: {
       asset: 'shop-card-frame-11',
-      checkedAt: '2026-07-20',
+      checkedAt: '2026-07-21',
       confidence: 'high',
     },
   },
