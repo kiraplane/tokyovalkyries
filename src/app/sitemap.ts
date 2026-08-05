@@ -32,7 +32,7 @@ const guideRoutes = guides
   .map((guide) => guide.path)
   .filter((path) => !coreRoutes.includes(path as Routes));
 
-const stableLastModified = new Date('2026-08-03T00:00:00.000Z');
+const stableLastModified = new Date('2026-08-04T00:00:00.000Z');
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = getCanonicalBaseUrl();
