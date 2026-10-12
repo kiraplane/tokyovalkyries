@@ -1,6 +1,6 @@
 import type { DataSource, GameFact, KeywordMatrixItem } from './types';
 
-export const checkedAt = '2026-09-15';
+export const checkedAt = '2026-10-12';
 
 export const siteFacts = {
   siteName: 'Tokyo Valkyries',
